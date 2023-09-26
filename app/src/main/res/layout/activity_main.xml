@@ -46,14 +46,33 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true">
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-
-
-
-
+                android:id="@+id/status"
+                android:layout_gravity="center"
+                android:text="Clear sky"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
             </TextView>
+            <TextView
+                android:id="@+id/temp"
+                android:layout_gravity="center"
+                android:text="24°C"
+                android:textSize="90sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/temp_min"
+                    android:text="Min Temp : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            </LinearLayout>
 
         </LinearLayout>
     </RelativeLayout>
