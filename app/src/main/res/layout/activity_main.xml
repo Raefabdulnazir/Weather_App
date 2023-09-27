@@ -10,7 +10,7 @@
     android:padding="25px"
     android:theme="@style/CustomTheme"
     >
-    
+
     <RelativeLayout
         android:id="@+id/mainContainer"
         android:visibility="visible"
@@ -69,9 +69,49 @@
                 android:gravity="center">
                 <TextView
                     android:id="@+id/temp_min"
-                    android:text="Min Temp : "
+                    android:text="Min Temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"></Space>
+                <TextView
+                    android:id="@+id/temp_max"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Max Temp"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/detailsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="#3CF1EBF1"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/sunrise"
+                        app:tint="#FFFFFF">
+                    </ImageView>
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
