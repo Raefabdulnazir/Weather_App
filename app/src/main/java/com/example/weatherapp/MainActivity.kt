@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         weatherTask().execute()
     }
-    inner class weatherTask():AsyncTask<String,Void,String>(){
+    inner class weatherTask(    ):AsyncTask<String,Void,String>(){
         override fun onPreExecute() {
             super.onPreExecute()
             findViewById<ProgressBar>(R.id.loader).visibility = View.VISIBLE
